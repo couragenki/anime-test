@@ -1,28 +1,27 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        anime-test
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="wrapper">
+    <div class="content hoge1">
+      hoge1
+    </div>
+    <div class="content hoge2">
+      hoge2
+    </div>
+    <div class="movie">
+      <p class="animation-text">
+        hogehogehogehoge
+      </p>
+      <video
+        autoplay
+        muted
+        loop
+        src="https://www.apple.com/105/media/ww/imac-24/2021/5e004d75-3ad6-4bb9-ab59-41f891fc52f0/anim/display-hero/large_2x.mp4"
+      />
+    </div>
+    <div class="content hoge3">
+      hoge3
+    </div>
+    <div class="content hoge4">
+      hoge4
     </div>
   </div>
 </template>
@@ -32,42 +31,39 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.wrapper {
+  width: 100%;
+  background-color: cornsilk;
+}
+.content {
+  width: 100%;
+  height: 2000px;
+}
+.movie {
+  width: 100%;
+}
+.movie video {
+  width: 100%;
+}
+.animation-text {
+  width: 100%;
+  position: absolute;
+  color: #FFF;
+  font-size: 100px;
   text-align: center;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.hoge1 {
+  background-color: crimson;
+}
+.hoge2 {
+  background-color: yellow;
+}
+.hoge3 {
+  background-color: cyan;
+}
+.hoge4 {
+  background-color: blue;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
